@@ -1,0 +1,96 @@
+#body-cat-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#body-cat-section div{
+    background: pink;
+    margin: 5px;
+    padding: 10px;
+    width: 250px;
+    height: 320px;
+    border-radius: 25% 10%;
+    text-align: center;
+}
+
+#body-cat-section div img{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+#orderNow{
+    display: block;
+    text-align: center;
+}
+#orderNow #order-btn{
+    margin: 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 25%;
+    border-color: rgb(207, 131, 144);
+    background-color: pink;
+    cursor: pointer;
+}
+
+#aboutUs{
+    text-align: center;
+}
+#aboutUs video{
+    width: 900px;
+}
+#describe .para span{
+    font-size: 250%;
+}
+#describe {
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15% 20%;
+    text-align: center;
+    font-size: 150%;
+}
+@media all and (max-width: 900px){
+    #describe .para span {
+        font-size: 23px;
+    }
+    #describe{
+        font-size: 21px;
+    }
+    #aboutUs video{
+        width: 730px;
+    }
+}
+@media all and (max-width: 730px){
+    #describe .para span {
+        font-size: 20px;
+    }
+    #describe{
+        font-size: 18px;
+    }
+    #aboutUs video{
+        width: 645px;
+    }
+}
+@media all and (max-width: 645px){
+    #describe .para span {
+        font-size: 15px;
+    }
+    #describe{
+        font-size: 13px;
+    }
+    #aboutUs video{
+        width: 440px;
+    }
+}
+@media all and (max-width: 440px){
+    #describe .para span {
+        font-size: 12px;
+    }
+    #describe{
+        font-size: 10px;
+    }
+    #aboutUs video{
+        width: 200px;
+    }
+}

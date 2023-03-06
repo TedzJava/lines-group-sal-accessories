@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Lines Group - s.a.l - Home page</title>
+        <link rel="stylesheet" type="text/css" href="./css/for-index.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/for-header.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/for-popup.css"/>
+    </head>
+    <body onload="placeAll()">
+        <header>
+            <div class="header-div1">
+                <img src="./medias/images/logo.png" alt="logo">&emsp;
+                <nav id="menu">
+                    <a href="./index.html">Home</a>&emsp;
+                    <a onclick="showCateg()">Categories</a>&emsp;
+                    <a class="contact-link" href="./contact.html">Contact us</a>
+                </nav>
+            </div>
+            <nav id="categories-menu">
+                <a id="all" onclick="show(this.id)">All</a> &emsp;
+                <a id="bracelet" onclick="show(this.id)">Bracelets</a> &emsp;
+                <a id="comb" onclick="show(this.id)">Hair Combs</a> &emsp;
+                <a id="crown" onclick="show(this.id)">Crowns</a> &emsp;
+                <a id="flower" onclick="show(this.id)">Flowers</a> &emsp;
+                <a id="glasses" onclick="show(this.id)">Decorated Glasses</a> &emsp;
+                <a id="headband" onclick="show(this.id)">Headbands</a> &emsp;
+                <a id="rita_comb" onclick="show(this.id)">Rita Combs</a> &emsp;
+                <a id="rita_crown" onclick="show(this.id)">Rita Crowns</a>
+            </nav>
+        </header>
+        <br/><br/><br/>
+        <section id="body-cat-section"> 
+        </section>
+        <section id="aboutUs">
+            <article id="describe">
+                <div class="para">
+                    <p>
+                        <span>W</span>elcome to Lines Group brand, the home of exquisite & the new world of royal luxury of 
+                        bridal & special occasion Crowns, Tiaras, Headpieces & Jewelry.<br/>
+                        <span>W</span>e are based in <a href="https://en.wikipedia.org/wiki/Lebanon">Lebanon</a>.<br/>
+                        <span>O</span>ur collections are crafted with your needs in mind. Looking for glitz and royal glamor, 
+                        statement pieces or simple elegance? look no more! Lines Group presents to you amazing collections 
+                        bringing your vision into life!<br/>
+                        <span>W</span>e use only the finest materials and expert craftsmanship to create lasting quality for 
+                        your special day that will be treasured for a lifetime.<br/>
+                        <span>O</span>ur headpieces are designed with style, quality, and attention to detail in mind, for 
+                        discerning clients who demand only the best.
+                    </p>
+                </div>
+            </article>
+            <video controls>
+                <source src="./medias/videos/vid-decor.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <div id="orderNow">
+        </div>
+        <script src="./js/for-categories.js"></script>
+        <script src="./js/for-order.js"></script>
+    </body>
+</html>

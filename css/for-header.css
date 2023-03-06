@@ -1,0 +1,104 @@
+header{
+    display: block;
+    background-color: pink;
+}
+#menu{
+    margin: 0.5em;
+    padding: 1.5em;
+    font-size: 28px;
+    float: right;
+}
+.header-div1 img{
+    height: 140px;
+}
+
+#categories-menu{
+    display: none;
+    padding: 0 1.4em;
+    background-color: pink;
+    font-size: 23px;
+    float: right;
+}
+#categories-menu a:hover{
+    padding: 0 1.4em;
+    color: rgb(201, 95, 112);
+    background-color: #fff;
+}
+
+#categories-menu a, #menu a{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+@media all and (max-width: 900px){
+    .header-div1 img{
+        height: 100px;
+    }
+    #menu a{
+        font-size: 23px;
+    }
+    #menu{
+        margin: auto;
+        padding: auto;
+    }
+    #categories-menu{
+        line-height: 4ex;
+    }
+    #categories-menu a{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 730px){
+    .header-div1 img{
+        height: 75px;
+    }
+    #menu a{
+        font-size: 20px;
+    }
+    nav#menu{
+        margin: auto;
+        padding: auto;
+    }
+    #categories-menu{
+        line-height: 2.5ex;
+    }
+    #categories-menu a{
+        font-size: 17px;
+    }
+}
+@media all and (max-width: 645px){
+    .header-div1 img{
+        height: 45px;
+    }
+    #menu a{
+        font-size: 15px;
+    }
+    #menu{
+        margin: 0;
+        padding: 0;
+    }
+    #categories-menu{
+        text-align: center;
+    }
+}
+@media all and (max-width: 440px){
+    .header-div1 {
+        display: block;
+        text-align: center;
+        background-color: #fff;
+    }
+    #categories-menu{
+        line-height: 1ex;
+        float: left;
+    }
+    #categories-menu a{
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+    #categories-menu a:hover{
+        padding: 0%;
+    }
+    
+}
