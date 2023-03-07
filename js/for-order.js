@@ -14,7 +14,7 @@ function orderNow(){
 function nextStepOrder(){
     const popup = document.getElementById('popup');
     const checkboxes = document.querySelectorAll('.popup-checkbox');
-    var res = "<h2>This is your FINAL Order:</h2><h3>You can now copy your order to clipboard and go to 'Contact us' section to send us your order</h3><textarea id='orderText'>Hi, I'm looking to buy from your shop these items : ";
+    var res = "<h2>This is your FINAL Order:</h2><h3>You can now copy your order to clipboard and go to 'Contact us' section to send us your order</h3><textarea id='orderText' readonly>Hi, I'm looking to buy from your shop these items : ";
     var sequence = 1;
     for(var checkbox of checkboxes){
         if(checkbox.checked == false){
@@ -26,6 +26,7 @@ function nextStepOrder(){
 }
 function copyOrder(){
     const text = document.querySelector("#orderText");
+
     text.select();
     text.setSelectionRange(0, 99999);
     document.execCommand('copy');

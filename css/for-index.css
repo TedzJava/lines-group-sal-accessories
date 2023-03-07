@@ -23,12 +23,23 @@
         margin-top: 60px;
     }
     #body-cat-section div{
-        width: 200px;
-        height: 250px;
+        width: 220px;
+        height: 270px;
     }
     #body-cat-section div img{
         width: 200px;
         height: 200px;
+    }
+}
+@media all and (max-width: 515px){
+    #body-cat-section div{
+        width: 130px;
+        height: 175px;
+        font-size: 13px;
+    }
+    #body-cat-section div img{
+        width: 130px;
+        height: 130px;
     }
 }
 @media all and (max-width: 370px){
